@@ -42,12 +42,18 @@ class ViewController: UIViewController {
 
 extension ViewController: UITextFieldDelegate {
     
-    @objc func textFieldDidChange(_ textField: UITextField) {        
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        print("change")
         _ = ChangeKeyColor()
+        
+        let subview = UIApplication.shared.windows[0].subviews[1].subviews[0].subviews[2]
+        subview.backgroundColor = .black
+        
+        let button = subview.subviews[0].subviews[1].subviews[0]
+        button.backgroundColor = UIColor(displayP3Red: 207/255, green: 172/255, blue: 61/255, alpha: 1.0)
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        
         switch textField {
         case textField1:
             overlay.backgroundColor = .red
@@ -57,6 +63,11 @@ extension ViewController: UITextFieldDelegate {
             overlay.backgroundColor = .black
         case textField4:
             overlay.backgroundColor = .white
+            
+            //UIApplication.shared.windows.first?.subviews[1].subviews.first?.subviews[2].backgroundColor = .black
+//            let subview = UIApplication.shared.windows[0].subviews[1].subviews[1].subviews[2]
+//            subview.backgroundColor = .black
+            
         default:
             overlay.backgroundColor = .white
         }

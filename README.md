@@ -23,7 +23,11 @@ Modify 'User Interface Style' in Info.plist to Automatic|Light|Dark to setup sty
 ## Demo App
 
 - Just a prototype testfield. Change isTVML in AppDelegate for UIKit or TVML demo.
-- Select the appropriate resource loader in main.js to load a specific TVML page. 
+- Select the appropriate resource loader in main.js to load a specific TVML page.
+
+### Change Properites in Subview
+
+I tried to change properties once the keyboard is loaded (currently only for the first textfield after beginning to edit).
 
 ## Button Color
 
