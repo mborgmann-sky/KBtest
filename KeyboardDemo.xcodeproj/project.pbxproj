@@ -20,6 +20,7 @@
 		A7477C0D2436044700F64B83 /* form.tvml in Resources */ = {isa = PBXBuildFile; fileRef = A7477C0B243603F700F64B83 /* form.tvml */; };
 		A7477C0F2436045D00F64B83 /* search.tvml in Resources */ = {isa = PBXBuildFile; fileRef = A7477C0E2436045D00F64B83 /* search.tvml */; };
 		A7477C132436053F00F64B83 /* text.tvml in Resources */ = {isa = PBXBuildFile; fileRef = A7477C122436053F00F64B83 /* text.tvml */; };
+		A7477C1624363A2000F64B83 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7477C1524363A2000F64B83 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		A7477C0E2436045D00F64B83 /* search.tvml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = search.tvml; sourceTree = "<group>"; };
 		A7477C122436053F00F64B83 /* text.tvml */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.tvml; sourceTree = "<group>"; };
 		A7477C14243607FF00F64B83 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A7477C1524363A2000F64B83 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A7477BEB2434CC4200F64B83 /* ViewController.swift */,
 				A7477BFD2434FC7600F64B83 /* SearchViewController.swift */,
 				A7477C012435E03B00F64B83 /* TabBarViewController.swift */,
+				A7477C1524363A2000F64B83 /* Utilities.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			files = (
 				A7477C022435E03B00F64B83 /* TabBarViewController.swift in Sources */,
 				A7477C0C243603F700F64B83 /* form.tvml in Sources */,
+				A7477C1624363A2000F64B83 /* Utilities.swift in Sources */,
 				A7477BEC2434CC4200F64B83 /* ViewController.swift in Sources */,
 				A7477C082435E3D300F64B83 /* ResourceLoader.swift in Sources */,
 				A7477BFE2434FC7600F64B83 /* SearchViewController.swift in Sources */,

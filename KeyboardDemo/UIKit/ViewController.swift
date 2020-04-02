@@ -42,6 +42,7 @@ class ViewController: UIViewController {
 extension ViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
+        
         switch textField {
         case textField1:
             overlay.backgroundColor = .red
@@ -62,6 +63,8 @@ extension ViewController: UITextFieldDelegate {
         textField4.isHidden = true
         
         tabBarController?.tabBar.isHidden = true
+        
+        _ = ChangeKeyColor()
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
