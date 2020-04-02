@@ -46,11 +46,38 @@ extension ViewController: UITextFieldDelegate {
         print("change")
         _ = ChangeKeyColor()
         
-        let subview = UIApplication.shared.windows[0].subviews[1].subviews[0].subviews[2]
-        subview.backgroundColor = .black
+        let keyboardView = UIApplication.shared.windows[0].subviews[1].subviews[0].subviews[2]
+        keyboardView.backgroundColor = .black
         
-        let button = subview.subviews[0].subviews[1].subviews[0]
+        let subviews = keyboardView.subviews[0]
+        
+        ///
+        
+        let textfield = subviews.subviews[0]
+        textfield.subviews[0].backgroundColor = UIColor(displayP3Red: 73/255, green: 74/255, blue: 78/255, alpha: 1.0)
+        
+        ///
+        
+        let button = subviews.subviews[1].subviews[0] as! UIButton
         button.backgroundColor = UIColor(displayP3Red: 207/255, green: 172/255, blue: 61/255, alpha: 1.0)
+        button.titleLabel?.textColor = .black
+        
+        ///
+        
+        let title = subviews.subviews[2]
+        let label = title.subviews[0] as! UILabel
+        label.textColor = .white
+        
+        ///
+        
+        let keyboard = subviews.subviews[3].subviews[0].subviews[0].subviews[0].subviews[0]
+        
+        let alphabetImage = keyboard.subviews[2].subviews[0] as! UIImageView
+        alphabetImage.image = UIImage(named: "AGG_SOURCE")
+        alphabetImage.backgroundColor = .blue
+        alphabetImage.alpha = 0.1
+        
+        
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -63,10 +90,6 @@ extension ViewController: UITextFieldDelegate {
             overlay.backgroundColor = .black
         case textField4:
             overlay.backgroundColor = .white
-            
-            //UIApplication.shared.windows.first?.subviews[1].subviews.first?.subviews[2].backgroundColor = .black
-//            let subview = UIApplication.shared.windows[0].subviews[1].subviews[1].subviews[2]
-//            subview.backgroundColor = .black
             
         default:
             overlay.backgroundColor = .white
