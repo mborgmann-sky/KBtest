@@ -1,6 +1,10 @@
 #  Introduction
 
-Just a collection of information about customizing keyboards
+Just a collection of information about customizing keyboards + [demo app](https://github.com/mborgmann-sky/KBtest).
+
+## Notes
+
+Apple makes it difficult to modify keyboard. I see no way to easily change fonts, background color, and button colors without being recejted at the app review. 
 
 ## Custom Keyboard Experience
 
@@ -25,3 +29,13 @@ Modify 'User Interface Style' in Info.plist to Automatic|Light|Dark to setup sty
 
 - Not supported out-of-the-box.
 - For iOS there's a [hack](https://stackoverflow.com/a/36829956) and another [hack](https://stackoverflow.com/a/36829956), but will likely not pass app review.
+
+## Background Color
+
+- It seems not to be possible to change the background color, except chosing dark & light mode.
+- However, the keyboard background has opacity and will blur the background
+- By hiding the parent viewcontrollers UI elements in e.g. textFieldDidBeginEditing, a plane background can be achived which also applies tones on the button color. 
+
+## TVML
+
+Keyboard input is supported with searchbarTemplate and formTemplate.
