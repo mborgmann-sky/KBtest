@@ -34,12 +34,17 @@ class ViewController: UIViewController {
         overlay = UIView(frame: view.frame)
         overlay.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         view.insertSubview(overlay, at: 0)
+        
+        textField1.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
     }
-    
 
 }
 
 extension ViewController: UITextFieldDelegate {
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {        
+        _ = ChangeKeyColor()
+    }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
@@ -63,8 +68,6 @@ extension ViewController: UITextFieldDelegate {
         textField4.isHidden = true
         
         tabBarController?.tabBar.isHidden = true
-        
-        _ = ChangeKeyColor()
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
