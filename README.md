@@ -39,3 +39,7 @@ Modify 'User Interface Style' in Info.plist to Automatic|Light|Dark to setup sty
 ## TVML
 
 Keyboard input is supported with searchbarTemplate and formTemplate.
+
+## Other Apps
+
+Have not discovered yet another a custimized keyboard.
