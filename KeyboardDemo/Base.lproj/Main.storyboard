@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="INh-FE-hCq">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Textfields-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Textfields" customClass="ViewController" customModule="KeyboardDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmc-tz-av8">
+                                <rect key="frame" x="780.5" y="165" width="359" height="67"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Light Keyboard Look" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mfG-bE-C58">
+                                <rect key="frame" x="669" y="347" width="582" height="64"/>
+                                <color key="backgroundColor" red="0.58039215686274503" green="0.58039215686274503" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="g2J-WZ-7rs"/>
+                                    <constraint firstAttribute="width" constant="582" id="ip9-lJ-iMa"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
+                                <connections>
+                                    <action selector="textField1:" destination="gsl-hn-vVQ" eventType="editingDidEnd" id="Knh-zw-QVv"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dark Keyboard Look" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WZG-jZ-wTP">
+                                <rect key="frame" x="669" y="481" width="582" height="64"/>
+                                <color key="backgroundColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="582" id="Mde-XJ-Q5j"/>
+                                    <constraint firstAttribute="height" constant="64" id="VlE-5y-Zw8"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Customized Keyboard Look" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAH-Fk-LTm">
+                                <rect key="frame" x="669" y="615" width="582" height="64"/>
+                                <color key="backgroundColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Vsr-2A-bny"/>
+                                    <constraint firstAttribute="width" constant="582" id="Y9W-39-BsR"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Default Keyboard Look" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x0D-16-o4u">
+                                <rect key="frame" x="669" y="751" width="582" height="64"/>
+                                <color key="backgroundColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="582" id="39q-R3-jtl"/>
+                                    <constraint firstAttribute="height" constant="64" id="klf-kp-yJe"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="WZG-jZ-wTP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4D7-Fr-ehy"/>
+                            <constraint firstItem="eAH-Fk-LTm" firstAttribute="top" secondItem="WZG-jZ-wTP" secondAttribute="bottom" constant="70" id="4se-io-W3x"/>
+                            <constraint firstItem="eAH-Fk-LTm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L1S-Sh-Xex"/>
+                            <constraint firstItem="dmc-tz-av8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="LHX-81-fXa"/>
+                            <constraint firstItem="x0D-16-o4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MNS-xg-hkS"/>
+                            <constraint firstItem="WZG-jZ-wTP" firstAttribute="top" secondItem="mfG-bE-C58" secondAttribute="bottom" constant="70" id="Mit-4t-RtK"/>
+                            <constraint firstItem="x0D-16-o4u" firstAttribute="top" secondItem="eAH-Fk-LTm" secondAttribute="bottom" constant="72" id="SIy-qi-7Y6"/>
+                            <constraint firstItem="mfG-bE-C58" firstAttribute="top" secondItem="dmc-tz-av8" secondAttribute="bottom" constant="115" id="UGf-HE-aQY"/>
+                            <constraint firstItem="dmc-tz-av8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rKF-ta-xIx"/>
+                            <constraint firstItem="mfG-bE-C58" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yKg-g0-btC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Textfields" id="Z3K-zJ-prI"/>
+                    <connections>
+                        <outlet property="textField1" destination="mfG-bE-C58" id="f2M-nV-1a4"/>
+                        <outlet property="textField2" destination="WZG-jZ-wTP" id="a5u-mq-V4S"/>
+                        <outlet property="textField3" destination="eAH-Fk-LTm" id="AFh-Nu-zrT"/>
+                        <outlet property="textField4" destination="x0D-16-o4u" id="rYK-Nv-CvL"/>
+                        <outlet property="titleLabel" destination="dmc-tz-av8" id="UNa-4P-zrb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="gsl-hn-vVQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2806" y="-817"/>
+        </scene>
+        <!--Searchbar-->
+        <scene sceneID="OBW-wh-BRZ">
+            <objects>
+                <viewController storyboardIdentifier="SearchResultsViewController" id="niQ-2q-4ei" customClass="SearchViewController" customModule="KeyboardDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mEX-rK-ZEl"/>
+                        <viewControllerLayoutGuide type="bottom" id="J2D-oK-Fnz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3fO-vh-KEl">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yf9-mF-Cu6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Searchbar" id="Byc-ah-iEY"/>
+                    <simulatedTabBarMetrics key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHD-vg-0Qf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2806" y="762"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="R2n-aT-pNS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="INh-FE-hCq" customClass="TabBarViewController" customModule="KeyboardDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4G3-Xv-M7B">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6XN-gp-mNe"/>
+                        <segue destination="niQ-2q-4ei" kind="relationship" relationship="viewControllers" id="nMr-eX-Lgg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4U-T3-3eu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163" y="-61"/>
+        </scene>
+    </scenes>
+</document>
