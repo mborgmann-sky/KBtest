@@ -19,6 +19,39 @@ class ViewController: UIViewController {
     var overlay: UIView!
     var image: UIImage!
     
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+        //textFieldDidChange(textField1)
+        
+        if isKeyboardShown() {
+            let keyboardView = UIApplication.shared.windows[0].subviews[1].subviews[0].subviews[2].subviews[0]
+            
+            textFieldDidChange(textField1)
+        }
+        
+    }
+    
+    private func isKeyboardShown() -> Bool {
+        
+        if let window = UIApplication.shared.windows.first {
+            if window.subviews.indices.contains(1) {
+                let subview1 = window.subviews[1]
+                if subview1.subviews.indices.contains(0) {
+                    let subview2 = subview1.subviews[0]
+                    if subview2.subviews.indices.contains(2) {
+                        let subview3 = subview2.subviews[2]
+                        if subview3.subviews.indices.contains(0) {
+                            let subview4 = subview3.subviews
+                            print(subview4)
+                            return true
+                        }
+                    }
+                }
+            }
+        }
+    
+        return false
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -35,7 +68,7 @@ class ViewController: UIViewController {
         overlay.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         view.insertSubview(overlay, at: 0)
         
-        textField1.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
+        //textField1.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), for: .editingChanged)
     }
 
 }
@@ -80,6 +113,7 @@ extension ViewController: UITextFieldDelegate {
         
     }
     
+    /*
     func textFieldDidBeginEditing(_ textField: UITextField) {
         switch textField {
         case textField1:
@@ -115,5 +149,6 @@ extension ViewController: UITextFieldDelegate {
         
         tabBarController?.tabBar.isHidden = false
     }
+    */
     
 }

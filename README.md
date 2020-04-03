@@ -29,7 +29,9 @@ Modify 'User Interface Style' in Info.plist to Automatic|Light|Dark to setup sty
 
 I tried to change properties once the keyboard is loaded (currently only for the first textfield after beginning to edit).
 
-The keyboardDidShow notification is not supported by tvOS (iOS only)(https://developer.apple.com/documentation/uikit/uiresponder/1621602-keyboarddidshownotification), which would be required to trigger making changes to the keyboard
+- Changing keyboard properties when the view controllers didUpdateFocus is called.
+- The keyboardDidShow notification is not supported by tvOS (iOS only)(https://developer.apple.com/documentation/uikit/uiresponder/1621602-keyboarddidshownotification), which would be required to trigger making changes to the keyboard.
+
 
 ## Button Color
 
